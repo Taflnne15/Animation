@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+nav{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-color: #e77a8c;
+width: 100%;
+height: 100px;
+}
+
+ul{
+    margin-top:29px;
+ display: flex;
+list-style: none;
+
+}
+li > a{
+
+   padding: 10px;
+    font-family: 'Chivo Mono', monospace;
+    font-size: larger;
+
+    color: rgb(255, 255, 255);
+    
+}
+
+li a:hover {
+    color: rgb(98, 230, 230);
+}
+body{
+
+    background-color: white;
+}
+main img{
+    margin-top: 100px;
+    animation: waving-hand 2.5s infinite; 
+    transform-origin: 70% 70%; 
+}
+  /* to make waving hand */
+@keyframes waving-hand {
+
+    0% {
+
+transform: rotate(0deg);
+}
+10% {
+
+    transform: rotate(14deg);
+    
+}
+20% {
+
+    transform: rotate(-8deg);
+}
+
+30% {
+
+    transform: rotate(14deg);
+
+}
+
+40% {
+
+    transform: rotate(-4deg);
+}  
+
+50%{
+
+    transform: rotate(10deg);
+}   
+
+60% {
+
+    transform: rotate(deg);
+}    
+
+100% {
+
+    transform: rotate(deg);
+}   
+
+}
+h1{
+    font-family: 'Chivo Mono', monospace;
+    color: rgb(53, 232, 238);
+}
+
+.container{
+    position: relative;
+    width: 250px;
+    height: 320px;
+    display: inline-block;
+    margin-top: 50px;
+    
+}
+/* 2 */
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+/* 2 */
+.card:hover{
+    transform: rotateY(180deg);
+}
+/* 3 */
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background:pink;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+/* 4 */
+.back{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: rgb(53, 232, 238);
+    color: black;
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+.flipcard{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+ 
